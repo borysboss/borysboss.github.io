@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .a4-container {
+            width: 210mm;
+            height: 297mm;
+            margin: 0 auto;
+            position: relative;
+            border: 1px solid #ccc; /* Opcjonalna ramka dla wizualizacji */
+        }
+
+        .curly-brace {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            height: 100%;
+            width: 3mm; /* Szerokość nawiasu */
+            transform: translateX(-50%);
+        }
+
+        .curly-brace svg {
+            stroke: black;
+            stroke-width: 0.2mm; /* Grubość linii */
+            fill: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="a4-container">
+        <div class="curly-brace">
+            <svg viewBox="0 0 20 100" preserveAspectRatio="none">
+                <!-- Path generowany programistycznie -->
+                <path d="M10 0 C15 0,15 5,10 5 
+                         C15 5,15 10,10 10
+                         V90
+                         C15 90,15 95,10 95
+                         C15 95,15 100,10 100"/>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>
